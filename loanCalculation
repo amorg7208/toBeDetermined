@@ -25,9 +25,9 @@ public static void loanCalculuation(Scanner main, String major, String job, int 
         main.next();
     }
     int loanTerm = main.nextInt();
-    // calculation monthly loan payment (THERE IS SOME ISSUE IN THE LOAN CALCULATION)
+    // calculation monthly loan payment
 
-    double loanMonthlyPay = (loanRate / 12.0/100) * (loanAmount / (1 - (1 / Math.pow(1 + loanRate / 12.0, loanTerm * 12))));
+    double loanMonthlyPay = (loanRate / 12.0/100) * (loanAmount / (1 - (1 / Math.pow(1 + loanRate / 12.0/100, loanTerm * 12))));
     double loanPercentSalary = loanMonthlyPay * 12/ salary * 100;
     System.out.println("Summary of provided information: ");
     //problem here
