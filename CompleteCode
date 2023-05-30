@@ -59,7 +59,7 @@ public class Project {
         while (i < majorsChoices.length) {
             if (major.equalsIgnoreCase(majorsChoices[i])) {
                 major = majorsChoices[i];
-                i = majorsChoices.length;
+                break;
             }
             i++;
             if (i == majorsChoices.length) {
@@ -94,8 +94,7 @@ public class Project {
         while (i < jobs.length) {
             if (job.equalsIgnoreCase(jobs[i])) {
                 job = jobs[i];
-                salary =
-                i = jobs.length;
+                break;
             }
             i++;
             if (i == jobs.length) {
